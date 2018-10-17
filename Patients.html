@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon.png">
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Patient
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="./assets/css/material-kit.css?v=2.0.4" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="./assets/demo/demo.css" rel="stylesheet" />
+  <style>
+    .custom-combobox {
+    position: relative;
+    display: inline-block;
+  }
+  .custom-combobox-toggle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: -1px;
+    padding: 0;
+  }
+  .custom-combobox-input {
+    margin: 0;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+  }
+  </style>
+</head>
+
+<body class="index-page sidebar-collapse">
+
+
+  <div class="main main-raised">
+
+    <div class="section section-navbars cd-section" id="navigation">
+    </div>
+    <nav class="navbar navbar-inverse navbar-expand-lg bg-dark" role="navigation-demo">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-translate">
+          <a class="navbar-brand" href="../material-kit/Dashboard.html">Xsilica</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="../material-kit/Clinics.html" class="nav-link">
+                Clinics
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../material-kit/Register.html" class="nav-link">
+                Register
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#pablo" class="nav-link">
+                Staff
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#pablo" class="btn btn-rose btn-raised btn-fab btn-round" data-toggle="dropdown">
+                <i class="material-icons">email</i>
+              </a>
+            </li>
+            <li class="dropdown nav-item">
+              <a href="#pablo" class="profile-photo dropdown-toggle nav-link" data-toggle="dropdown">
+                <div class="profile-photo-small">
+                  <img src="./assets/img/faces/avatar.jpg" alt="Circle Image" class="rounded-circle img-fluid">
+                </div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <h6 class="dropdown-header">Dropdown header</h6>
+                <a href="#pablo" class="dropdown-item">Me</a>
+                <a href="#pablo" class="dropdown-item">Settings and other stuff</a>
+                <a href="#pablo" class="dropdown-item">Sign out</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-->
+    </nav>
+    <!-- 	            end nav tabs -->
+
+
+
+    <div class="container mb-0">
+      <ul class="nav" role="tab">
+        <li class="nav-item">
+          <a class="nav-link" href="../material-kit/Dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../material-kit/Appointments.html">
+            Appointments
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../material-kit/Patients.html">
+            Patients
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../material-kit/Tasks.html">
+            Tasks
+          </a>
+        </li>
+      </ul>
+
+
+
+
+
+    </div>
+    <hr class="mt-0 mb-0">
+    <!--Dashboard/Appointments/Patients/Tasks-->
+
+    <div class="container">
+      <div id="navigation-pills">
+
+
+        <div class="row align-self ">
+          <div class="col-lg-12 col-md-12">
+            <ul class="nav nav-pills nav-pills-icons" role="tablist">
+
+              <li class="nav-item active">
+                <a class="nav-link active" href="#patientDetails" role="tab" data-toggle="tab">
+                  <i class="material-icons"> face</i> Patient
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#schedule-1" role="tab" data-toggle="tab">
+                  <i class="fas fa-allergies"></i> Allergies
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#diagnosis" role="tab" data-toggle="tab">
+                  <i class="fas fa-diagnoses"></i> Diagnosis
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#complaints" role="tab" data-toggle="tab">
+                  <i class="fas fa-leaf"></i> Complaints
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#LabResults" role="tab" data-toggle="tab">
+                  <i class="fas fa-vials"></i> Lab Results
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#prescription" role="tab" data-toggle="tab">
+                  <i class="fas fa-tablets"></i> Prescription
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Vaccine" role="tab" data-toggle="tab">
+                  <i class="fas fa-syringe"></i> Vaccine
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#SickLeaves" role="tab" data-toggle="tab">
+                  <i class="fas fa-certificate"></i> Sick Leaves
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Payments" role="tab" data-toggle="tab">
+                  <i class="fas fa-money-bill"></i> Payments
+                </a>
+              </li>
+            </ul>
+            <hr class="mb-0">
+            <div class="tab-content ">
+              <div class="tab-pane active" id="patientDetails">
+                <!--Patient details in cards-->
+                <div class="row m-0">
+                  <div class="card mr-3" style="width: 15rem;">
+                    <img class="card-img-top profile-photo-small rounded-circle" style="width:200px; align-self: center"
+                      src="..//material-kit/assets/img/faces/marc.jpg" alt="Card image cap">
+
+                    <p class="font-weight-bold ml-1 text-center">Raj Kumar</p>
+                    <p class="text-sm-left ml-1 text-center">35 years | Male | 45 Kgs | 121 cms</p>
+                    <div class="card-body text-center">
+                      <a href="#0" class="card-link text-center">Edit</a>
+
+                    </div>
+                  </div>
+                  <div class="card mr-3" style="width: 15rem;">
+
+
+                    <span class="d-block p-2 bg-primary text-white">Communication</span>
+                    <p class="font-weight-bold ml-1">Mobile Number | 9885874569</p>
+                    <p class="text-sm-left ml-1">email | rajkiranrao@yahoo.com</p>
+                    <p class="text-sm-left ml-1">Flat no 201, Aracade plaza</p>
+                    <p class="text-sm-left ml-1">Barkatpura</p>
+                    <p class="text-sm-left ml-1">Hyderabad | Telangana</p>
+                    <div class="card-body text-center">
+                      <a href="#0" class="card-link text-center">Edit</a>
+
+                    </div>
+                  </div>
+                  <div class="card mr-3" style="width: 15rem;">
+
+
+                    <span class="d-block p-2 bg-primary text-white">Visits</span>
+                    <p class="text-sm-left ml-1">15-Sep-2018</p>
+                    <p class="text-sm-left ml-1">20-Sep-2018</p>
+                    <p class="text-sm-left ml-1">26-Sep-2018</p>
+                    <p class="text-sm-left ml-1">30-Sep-2018</p>
+
+                    <div class="card-body text-center">
+                      <a href="#" class="card-link ml-1">Add Next Visit</a>
+                      <a href="#0" class="card-link text-center">Edit</a>
+
+                    </div>
+                  </div>
+                  <div class="card mr-3" style="width: 15rem;">
+
+
+                    <span class="d-block p-2 bg-primary text-white">Remarks</span>
+                    <textarea class="form-control ml-1 mt-1" placeholder="remarks" id="exampleFormControlTextarea1"
+                      rows="3"></textarea>
+
+                    <div class="card-body text-center">
+
+                      <a href="#0" class="card-link text-center">Edit</a>
+
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!--Allergies-->
+              <div class="tab-pane" id="schedule-1">
+                <table class="table small">
+                  <thead class="thead-light">
+                    <tr>
+                      <th>Allergy</th>
+                      <th>Description</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Cow Milk</td>
+                      <td>Adverse effect on patient stomach</td>
+
+                    </tr>
+                    <tr>
+                      <td>Penicillin </td>
+                      <td>Adverse effect</td>
+
+                    </tr>
+                    <tr>
+                      <td>Peanuts</td>
+                      <td>Peanuts and other nuts</td>
+
+                    </tr>
+                  </tbody>
+                </table>
+                <button class="btn btn-success btn-sm pull-right" type="button" data-toggle="modal" data-target="#addAllergy">New</button>
+              </div>
+
+              <!--Diagnosis Tab pane-->
+              <div class="tab-pane small" id="diagnosis">
+                <div>
+                  <table class="table">
+                    <thead class="thead-light">
+                      <tr>
+                        <th>ICD Code</th>
+                        <th>Description</th>
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>A00</td>
+                        <td>Cholera</td>
+
+                      </tr>
+                      <tr>
+                        <td>A049</td>
+                        <td>Bacterial intestinal infection, unspecified</td>
+
+                      </tr>
+                      <tr>
+                        <td>W55</td>
+                        <td>Bitten or struck by other mammals</td>
+
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <button class="btn btn-success btn-sm pull-right" type="button" data-toggle="modal" data-target="#addDiagnosis">New</button>
+                </div>
+
+              </div>
+
+              <!--Complaints-->
+              <div class="tab-pane" id="complaints">
+                <table class="table small">
+                  <thead class="thead-light">
+                    <tr>
+                      <th>Complaint</th>
+                      <th>Description</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Head Ache</td>
+                      <td>Adverse effect on patient's left part of head</td>
+
+                    </tr>
+                    <tr>
+                      <td>Pain </td>
+                      <td>Stomach pain</td>
+
+                    </tr>
+                    <tr>
+                      <td>Hearing</td>
+                      <td>Left Ear not receptive</td>
+
+                    </tr>
+                  </tbody>
+                </table>
+                <button class="btn btn-success btn-sm pull-right" type="button" data-toggle="modal" data-target="#addComplaint">New</button>
+              </div>
+
+              <!--LabResults-->
+              <div class="tab-pane" id="LabResults">
+                <table class="table small">
+                  <thead class="thead-light">
+                    <tr>
+                      <th>Test Date</th>
+                      <th>Test</th>
+                      <th>Result</th>
+                      <th>Image</th>
+                      <th>Remarks</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>12/Sep/2018</td>
+                      <td>CBC</td>
+                      <td>Normal</td>
+                      <td><i class="fas fa-file"></i></td>
+                      <td>Need Second test</td>
+
+
+                    </tr>
+                    <tr>
+                      <td>12/Sep/2018</td>
+                      <td>Glucose</td>
+                      <td>High</td>
+                      <td><i class="fas fa-file"></i></td>
+                      <td>Need Second test</td>
+
+
+                    </tr>
+                    <tr>
+                      <td>12/Sep/2018</td>
+                      <td>SGPT</td>
+                      <td>Normal</td>
+                      <td><i class="fas fa-file"></i></td>
+                      <td>Need Second test</td>
+
+                    </tr>
+                  </tbody>
+                </table>
+                <button class="btn btn-success btn-sm pull-right" type="button" data-toggle="modal" data-target="#addLab">New</button>
+              </div>
+
+              <!--Prescription-->
+
+              <div class="col-md-12 pull-right tab-pane  " id="prescription">
+                <div class="row">
+
+                  <div class="col-md-12 bg-secondary pull-right">
+                    <div class="nav-tabs-wrapper  ">
+                      <ul class="nav nav-tabs" data-tabs="tabs">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#" data-toggle="tab"> <i class="fas fa-print mr-1"></i>View</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#" data-toggle="tab"> <i class="fas fa-print mr-1"></i>Print</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active " href="#" data-toggle="tab"> <i class="fas fa-envelope mr-1"></i>Email</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href="#" data-toggle="tab"> <i class="fas fa-comments mr-1"></i> SMS</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+                <!--Medicine names-->
+                <div class="row">
+                  <div class="card mr-3" style="width: 15rem;">
+
+
+                    <span class="d-block p-2 bg-primary text-white">Sorbitrate</span>
+                    <p class="font-weight-bold ml-1">BD | 1</p>
+                    <p class="text-sm-left ml-1">Under the tongue</p>
+
+                    <div class="card-body text-center">
+                      <a href="#0" class="card-link text-center">Edit</a>
+                      <a href="#0" class="card-link text-center">Remove</a>
+                    </div>
+                  </div>
+                  <div class="card mr-3" style="width: 15rem;">
+
+
+                    <span class="d-block p-2 bg-primary text-white">AMICLINE</span>
+                    <p class="font-weight-bold ml-1">qid | 1</p>
+                    <p class="text-sm-left ml-1">none</p>
+
+
+                    <div class="card-body text-center">
+                      <a href="#0" class="card-link text-center">Edit</a>
+                      <a href="#0" class="card-link text-center">Remove</a>
+                    </div>
+                  </div>
+                  <div class="card mr-3" style="width: 15rem;">
+
+
+                    <span class="d-block p-2 bg-primary text-white">SATROGYL 300mg </span>
+                    <p class="font-weight-bold ml-1">bis | 1</p>
+                    <p class="text-sm-left ml-1">after lunch</p>
+
+
+                    <div class="card-body text-center">
+                      <a href="#0" class="card-link text-center">Edit</a>
+                      <a href="#0" class="card-link text-center">Remove</a>
+                    </div>
+                  </div>
+                  <div class="card mr-3" style="width: 15rem;">
+
+
+                    <span class="d-block p-2 bg-primary text-white">FLUZIN 10mg</span>
+                    <p class="font-weight-bold ml-1">BID | 2 Tabs</p>
+                    <p class="text-sm-left ml-1">Empty Stomach</p>
+
+
+                    <div class="card-body text-center">
+                      <a href="#0" class="card-link text-center">Edit</a>
+                      <a href="#0" class="card-link text-center">Remove</a>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="row pull-right">
+                  <div class="col-md-12 col-sm-12 pull-md-right"> <button class="btn btn-success btn-sm pull-right"
+                      type="button" data-toggle="modal" data-target="#addMedication">Add Medicine</button></div>
+
+                </div>
+
+
+                <div class="row">
+
+                  <div class="card col-md-6">
+                    <div class="card-body">
+                      <div> <a href="#0" class="card-link text-center">Remove</a> X- Ray</div>
+                      <div> <a href="#0" class="card-link text-center">Remove</a> CBP </div>
+                      <div> <a href="#0" class="card-link text-center">Remove</a> TMT, LFT </div>
+
+
+                      <div class="card-body text-center">
+                        <a href="#0" class="card-link text-center">Advice Test</a>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group col-md-4 mt-3 ml-4">
+                    <label for="exampleFormControlTextarea1">Notes to Patient</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+
+
+                </div>
+
+
+
+              </div>
+
+              <!--Vaccine Tab pane-->
+              <div class="tab-pane" id="Vaccine">
+                <div>
+                  <table class="table small">
+                    <thead class="thead-light">
+                      <tr>
+                        <th>Vaccine Code</th>
+                        <th>Immunization Date</th>
+                        <th>Age at Immunization</th>
+                        <th>Immunization Alert</th>
+                        <th>Adverse Reaction</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>FLU</td>
+                        <td>12/Sep/2000</td>
+                        <td>20</td>
+                        <td>Not Effective</td>
+                        <td>None</td>
+
+                      </tr>
+                      <tr>
+                        <td>DRT</td>
+                        <td>25/Sep/2011</td>
+                        <td>25</td>
+                        <td>None</td>
+                        <td>None</td>
+
+                      </tr>
+                      <tr>
+                        <td>FLU</td>
+                        <td>05/Jan/2012</td>
+                        <td>30</td>
+                        <td>Not Effective</td>
+                        <td>Yes</td>
+
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <button class="btn btn-success btn-sm pull-right" type="button" data-toggle="modal" data-target="#addDiagnosis">New</button>
+                </div>
+
+              </div>
+
+
+              <!--Sick Leaves-->
+
+              <div class="tab-pane mt-0" id="SickLeaves">
+                <div class="row mt-0">
+                  <div class="col-md-12">
+                    <h3>
+                      <small> Sick Leave Certificates</small>
+                    </h3>
+                    <!-- Tabs on Plain Card -->
+                    <div class="card card-nav-tabs card-plain">
+                      <div class="card-header card-header-danger">
+                        <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                        <div class="nav-tabs-navigation">
+                          <div class="nav-tabs-wrapper">
+                            <ul class="nav nav-tabs" data-tabs="tabs">
+                              <li class="nav-item">
+                                <a class="nav-link active" href="#home" data-toggle="tab">Sick Leaves</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#updates" data-toggle="tab">Fitness/Joining</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#history" data-toggle="tab">Escort</a>
+                              </li>
+                              <li class="nav-item ">
+                                <button type="button" class="btn-group-toggle btn-outline-danger small nav-link">
+                                  Credit Balance <span class="badge badge-default">155</span>
+                                </button>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body ">
+                        <div class="tab-content text-center">
+                          <div class="tab-pane active" id="home">
+                            <p>
+
+                              MEDICAL CERTIFICATE FOR LEAVE OR EXTENSION OF LEAVE OR COMMUTATION OF LEAVE
+
+                              <br>
+                              Signature of the Government servant .............................
+
+                              I ....................................after careful personal examination of the case
+                              hereby certify that
+                              Shri/Smt./Kumari …………..............................whose signature is given above as
+                              suffering from
+                              .................................... and I consider that period of absence from duty of
+                              ...................... with
+                              effect from ....................... is absolutely necessary for the restoration of his /
+                              her health.
+
+
+                              Authorised Medical Attendant
+                              ………………………….Hospital/ Dispensary of other Registered Medical Practitioner .
+                              Dated: .................
+
+
+
+                              NOTE I: The nature and probable duration of the illness should be specified.
+
+                              NOTE II: This form should be adhered to as closely as possible and should be filled in
+                              after the signature of the Government servant has been taken. The certifying Officer is
+                              not at liberty to certify that the Government servant requires a change from or to a
+                              particular locality, or that he is not fit to proceed to a particular locality. Such
+                              certificates should only be given at the explicit desire of the administrative concerned,
+                              to whom it is open to decide, when an application on such grounds has been made to him,
+                              whether the applicant should go before a Civil Surgeon or Staff surgeon to decide the
+                              question of his / her fitness for service.
+
+                              NOTE III: Should a second medical Opinion be required, the authority competent to grant
+                              leave should arrange for the second medical examination to be made at the earliest
+                              possible date by a medical officer not below the rank of a Civil Surgeon or Staff
+                              Surgeon, who shall express an opinion both as regards the facts of illness and as regards
+                              the necessity for the amount of the leave recommended and for this purposed he may either
+                              require the Government servant to appear before himself or before a medical officer
+                              nominated be himself.
+
+                              NOTE.IV: No recommendation contained in this certificate shall be evidence of a claim to
+                              any leave not admissible to the Government servant.
+                            </p>
+                          </div>
+                          <div class="tab-pane" id="updates">
+                            <p> I will be the leader of a company that ends up being worth billions of dollars, because
+                              I
+                              got the answers. I understand culture. I am the nucleus. I think that&#x2019;s a
+                              responsibility that I have, to push possibilities, to show people, this is the level that
+                              things could be at. I think that&#x2019;s a responsibility that I have, to push
+                              possibilities, to show people, this is the level that things could be at. </p>
+                          </div>
+                          <div class="tab-pane" id="history">
+                            <p> I think that&#x2019;s a responsibility that I have, to push possibilities, to show
+                              people, this is the level that things could be at. I will be the leader of a company that
+                              ends up being worth billions of dollars, because I got the answers. I understand culture.
+                              I
+                              am the nucleus. I think that&#x2019;s a responsibility that I have, to push
+                              possibilities,
+                              to show people, this is the level that things could be at.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- End Tabs on plain Card -->
+                  </div>
+                  <div class="col-md-12 bg-secondary">
+                    <div class="nav-tabs-wrapper">
+                      <ul class="nav nav-tabs" data-tabs="tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active " href="#" data-toggle="tab"> <i class="fas fa-envelope mr-1"></i>Email</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#" data-toggle="tab"> <i class="fas fa-print mr-1"></i>Print</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link  " href="#" data-toggle="tab"> <i class="fas fa-comments mr-1"></i> SMS</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+              </div>
+
+              <!--Payments-->
+              <div class="tab-pane" id="Payments">
+                <div class="row mb-1">
+
+                  <div class="col-md-12 bg-secondary pull-right">
+                    <div class="nav-tabs-wrapper  ">
+                      <ul class="nav nav-tabs" data-tabs="tabs">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#" data-toggle="tab"> <i class="fas fa-print mr-1"></i>View</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#" data-toggle="tab"> <i class="fas fa-print mr-1"></i>Print</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active " href="#" data-toggle="tab"> <i class="fas fa-envelope mr-1"></i>Email</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href="#" data-toggle="tab"> <i class="fas fa-comments mr-1"></i> SMS</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="row">
+                  <div class="col col-md-8 col-sm-12">
+                    <table class="table small">
+                      <thead class="thead-light">
+                        <tr>
+                          <th>Date</th>
+                          <th>Description</th>
+                          <th>Amount</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>12/Sep/2018</td>
+                          <td>Consultation Fee</td>
+                          <td class="text-right"><i class="fa fa-rupee"></i>200</td>
+                        </tr>
+                        <tr>
+                          <td>12/Sep/2018 </td>
+                          <td>Lab Fee</td>
+                          <td class="text-right"><i class="fa fa-rupee"></i>500</td>
+                        </tr>
+                        <tr>
+                          <td>12/Sep/2018</td>
+                          <td>Medications</td>
+                          <td class="text-right"><i class="fa fa-rupee"></i>350</td>
+                        </tr>
+                        <tr>
+                          <td>12/Sep/2018</td>
+                          <td>ICU</td>
+                          <td class="text-right"><i class="fa fa-rupee"></i>1500</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <button class="btn btn-success btn-sm pull-right" type="button" data-toggle="modal" data-target="#addAllergy">Add
+                      Fee</button>
+
+                  </div>
+                  <div class="div col-md-4 col-sm-12 ">
+                    <div class="card  mt-0" style="width: 22rem;">
+
+                      <div class="row align-items-center  bg-primary text-white ">
+
+                        <table class="table ">
+                          <tr>
+                            <td>Bill No :124</td>
+                            <td class="font-weight-bold text-right"> Total Amount 45250</td>
+                          </tr>
+                        </table>
+
+                      </div>
+
+                      <div class="table mb-0  ">
+                        <table class="table">
+                          <tr>
+                            <td>Charges</td>
+                            <td class="text-right"><i class="fa fa-rupee"></i>4500</td>
+                          </tr>
+                          <tr>
+                            <td>GST</td>
+                            <td class="text-right"><i class="fa fa-rupee"></i>250</td>
+                          </tr>
+                          <tr>
+                            <td>Amount Payable</td>
+                            <td class="font-weight-bold text-right"><i class="fa fa-rupee"></i>45250</td>
+                          </tr>
+                        </table>
+                      </div>
+
+                      <div class="ml-1 mr-1 mt-0 form-group">
+                        <label for="formGroupExampleInput" class="bmd-label-floating text-right ml-1">Amount Recieved
+                        </label>
+                        <input type="text " class="form-control text-right" id="formGroupExampleInput">
+
+                      </div>
+                      <div class="card-body text-center">
+                        <a href="#0" class="card-link text-center">Edit</a>
+                        <a href="#0" class="card-link text-center">Pay</a>
+                        <a href="#0" class="card-link text-center">Print</a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="section section-download" id="downloadSection">
+      <div class="container">
+
+
+
+        <div class="sharing-area text-center">
+          <div class="row justify-content-center">
+            <h3>Thank you for supporting us!</h3>
+          </div>
+          <button id="twitter" class="btn btn-raised btn-twitter sharrre">
+            <i class="fa fa-twitter"></i> Tweet
+          </button>
+          <button id="facebook" class="btn btn-raised btn-facebook sharrre">
+            <i class="fa fa-facebook-square"></i> Share
+          </button>
+          <button id="googlePlus" class="btn btn-raised btn-google-plus sharrre">
+            <i class="fa fa-google-plus"></i> Share
+          </button>
+          <a id="github" href="https://github.com/creativetimofficial/material-kit" target="_blank" class="btn btn-raised btn-github">
+            <i class="fa fa-github"></i> Star
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Classic Modal -->
+
+  <!--Allergy Modal-->
+  <div class="modal fade" id="addAllergy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-info">
+          <h5 class="modal-title " id="exampleModalLabel">New Allergy</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="formGroupExampleInput" class="bmd-label-floating">Allergy</label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+
+          </div>
+
+          <div class="form-group">
+            <label for="formGroupExampleInput" class="bmd-label-floating">Description </label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-sm btn-success">Save </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Diagnosis Modal-->
+  <div class="modal fade" id="addDiagnosis" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-info">
+          <h5 class="modal-title " id="exampleModalLabel">New Diagnosis</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <div class="container">
+              <div class="row">
+                <div class="ui-widget">
+                  <label>ICD Code : </label>
+                  <select id="combobox">
+                    <option></option>
+                    <option value="Ultrasound Knee Right">Ultrasound Knee Right</option>
+                    <option value="Ultrasound Knee Left">Ultrasound Knee Left</option>
+                    <option value="Ultrasound Forearm/Elbow Right">Ultrasound Forearm/ Elbow Right</option>
+                    <option value="Ultrasound Forearm/Elbow Left">Ultrasound Forearm/Elbow Left</option>
+                    <option value="MRI Knee Right">MRI Knee Right</option>
+                    <option value="MRI Knee Left">MRI Knee Left</option>
+                    <option value="MRI Forearm/Elbow Right">MRI Forearm/Elbow Right</option>
+                    <option value="MRI Forearm/Elbow Left">MRI Forearm/Elbow Left</option>
+                    <option value="CT Knee Right">CT Knee Right</option>
+                    <option value="CT Knee Left">CT Knee Left</option>
+                    <option value="CT Forearm/Elbow Right">CT Forearm/Elbow Right</option>
+                    <option value="CT Forearm/Elbow Left">CT Forearm/Elbow Left</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput" class="bmd-label-floating">Description </label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-sm btn-success">Save </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Complaint Modal-->
+  <div class="modal fade" id="addComplaint" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-info">
+          <h5 class="modal-title " id="exampleModalLabel">New Complaint</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="formGroupExampleInput" class="bmd-label-floating">Complaint</label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+
+          </div>
+
+          <div class="form-group">
+            <label for="formGroupExampleInput" class="bmd-label-floating">Description </label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-sm btn-success">Save </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--LabResults Modal-->
+  <div class="modal fade" id="addLab" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-info">
+          <h5 class="modal-title " id="exampleModalLabel">New Lab Result</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="formGroupExampleInput" class="bmd-label-floating">Test Date</label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+
+          </div>
+
+          <div class="form-group">
+            <label for="formGroupExampleInput" class="bmd-label-floating">Test </label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput" class="bmd-label-floating">Result </label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput" class="bmd-label-floating">Upload Test </label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput" class="bmd-label-floating">Remarks </label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-sm btn-success">Save </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Medication Modal-->
+  <div class="modal fade" id="addMedication" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-info">
+          <h5 class="modal-title " id="exampleModalLabel">New Medication</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="formGroupExampleInput" class="bmd-label-floating">Name of the medicine</label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+
+          </div>
+
+          <div class="form-group">
+            <label for="formGroupExampleInput" class="bmd-label-floating">Time of usage </label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput" class="bmd-label-floating">Dosage </label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput" class="bmd-label-floating">Dosage or Instructions about Medicine </label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-sm btn-success">Save </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  End Modal -->
+  <footer class="footer" data-background-color="black">
+    <div class="container">
+      <nav class="float-left">
+        <ul>
+          <li>
+            <a href="https://www.creative-tim.com">
+              Creative Tim
+            </a>
+          </li>
+          <li>
+            <a href="https://creative-tim.com/presentation">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="http://blog.creative-tim.com">
+              Blog
+            </a>
+          </li>
+          <li>
+            <a href="https://www.creative-tim.com/license">
+              Licenses
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright float-right">
+        &copy; Copy Rights
+
+
+      </div>
+    </div>
+  </footer>
+  <!--   Core JS Files   -->
+  <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+  <script src="./assets/js/plugins/moment.min.js"></script>
+  <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+  <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--	Plugin for Sharrre btn -->
+  <script src="./assets/js/plugins/jquery.sharrre.js" type="text/javascript"></script>
+  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+  <script src="./assets/js/material-kit.js?v=2.0.4" type="text/javascript"></script>
+  <script>
+    $(document).ready(function () {
+      //init DateTimePickers
+      materialKit.initFormExtendedDatetimepickers();
+
+      // Sliders Init
+      materialKit.initSliders();
+    });
+
+
+    function scrollToDownload() {
+      if ($('.section-download').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('.section-download').offset().top
+        }, 1000);
+      }
+    }
+
+
+    $(document).ready(function () {
+
+      $('#facebook').sharrre({
+        share: {
+          facebook: true
+        },
+        enableHover: false,
+        enableTracking: false,
+        enableCounter: false,
+        click: function (api, options) {
+          api.simulateClick();
+          api.openPopup('facebook');
+        },
+        template: '<i class="fab fa-facebook-f"></i> Facebook',
+        url: 'https://demos.creative-tim.com/material-kit/index.html'
+      });
+
+      $('#googlePlus').sharrre({
+        share: {
+          googlePlus: true
+        },
+        enableCounter: false,
+        enableHover: false,
+        enableTracking: true,
+        click: function (api, options) {
+          api.simulateClick();
+          api.openPopup('googlePlus');
+        },
+        template: '<i class="fab fa-google-plus"></i> Google',
+        url: 'https://demos.creative-tim.com/material-kit/index.html'
+      });
+
+      $('#twitter').sharrre({
+        share: {
+          twitter: true
+        },
+        enableHover: false,
+        enableTracking: false,
+        enableCounter: false,
+        buttons: {
+          twitter: {
+            via: 'CreativeTim'
+          }
+        },
+        click: function (api, options) {
+          api.simulateClick();
+          api.openPopup('twitter');
+        },
+        template: '<i class="fab fa-twitter"></i> Twitter',
+        url: 'https://demos.creative-tim.com/material-kit/index.html'
+      });
+
+    });
+  </script>
+  <!--Script for auto complete-->
+  <script>
+    $(function () {
+      $.widget("custom.combobox", {
+        _create: function () {
+          this.wrapper = $("<span>")
+            .addClass("custom-combobox")
+            .insertAfter(this.element);
+
+          this.element.hide();
+          this._createAutocomplete();
+          this._createShowAllButton();
+        },
+
+        _createAutocomplete: function () {
+          var selected = this.element.children(":selected"),
+            value = selected.val() ? selected.text() : "";
+
+          this.input = $("<input>")
+            .appendTo(this.wrapper)
+            .val(value)
+            .attr("title", "")
+            .addClass("custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left")
+            .autocomplete({
+              delay: 0,
+              minLength: 0,
+              source: $.proxy(this, "_source")
+            })
+            .tooltip({
+              classes: {
+                "ui-tooltip": "ui-state-highlight"
+              }
+            });
+
+          this._on(this.input, {
+            autocompleteselect: function (event, ui) {
+              ui.item.option.selected = true;
+              this._trigger("select", event, {
+                item: ui.item.option
+              });
+            },
+
+            autocompletechange: "_removeIfInvalid"
+          });
+        },
+
+        _createShowAllButton: function () {
+          var input = this.input,
+            wasOpen = false
+
+          $("<a>")
+            .attr("tabIndex", -1)
+            .attr("title", "Show All Items")
+            .attr("height", "")
+            .tooltip()
+            .appendTo(this.wrapper)
+            .button({
+              icons: {
+                primary: "ui-icon-triangle-1-s"
+              },
+              text: "false"
+            })
+            .removeClass("ui-corner-all")
+            .addClass("custom-combobox-toggle ui-corner-right")
+            .on("mousedown", function () {
+              wasOpen = input.autocomplete("widget").is(":visible");
+            })
+            .on("click", function () {
+              input.trigger("focus");
+
+              // Close if already visible
+              if (wasOpen) {
+                return;
+              }
+
+              // Pass empty string as value to search for, displaying all results
+              input.autocomplete("search", "");
+            });
+        },
+
+        _source: function (request, response) {
+          var matcher = new RegExp($.ui.autocomplete.escapeRegex(request.term), "i");
+          response(this.element.children("option").map(function () {
+            var text = $(this).text();
+            if (this.value && (!request.term || matcher.test(text)))
+              return {
+                label: text,
+                value: text,
+                option: this
+              };
+          }));
+        },
+
+        _removeIfInvalid: function (event, ui) {
+
+          // Selected an item, nothing to do
+          if (ui.item) {
+            return;
+          }
+
+          // Search for a match (case-insensitive)
+          var value = this.input.val(),
+            valueLowerCase = value.toLowerCase(),
+            valid = false;
+          this.element.children("option").each(function () {
+            if ($(this).text().toLowerCase() === valueLowerCase) {
+              this.selected = valid = true;
+              return false;
+            }
+          });
+
+          // Found a match, nothing to do
+          if (valid) {
+            return;
+          }
+
+          // Remove invalid value
+          this.input
+            .val("")
+            .attr("title", value + " didn't match any item")
+            .tooltip("open");
+          this.element.val("");
+          this._delay(function () {
+            this.input.tooltip("close").attr("title", "");
+          }, 2500);
+          this.input.autocomplete("instance").term = "";
+        },
+
+        _destroy: function () {
+          this.wrapper.remove();
+          this.element.show();
+        }
+      });
+
+      $("#combobox").combobox();
+      $("#toggle").on("click", function () {
+        $("#combobox").toggle();
+      });
+    });
+  </script>
+</body>
+
+</html>

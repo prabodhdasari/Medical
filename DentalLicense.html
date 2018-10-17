@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon.png">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        Medical License
+    </title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <!-- CSS Files -->
+    <link href="./assets/css/material-kit.css?v=2.0.4" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="./assets/demo/demo.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+
+
+    <style>
+        .xdiv {
+  position: relative;
+  overflow: hidden;
+}
+.xinput {
+  position: absolute;
+  font-size: 50px;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+        </style>
+
+
+</head>
+
+<body class="index-page sidebar-collapse">
+
+
+    <div class="main main-raised">
+
+        <div class="section section-navbars cd-section" id="navigation">
+        </div>
+        <nav class="navbar navbar-inverse navbar-expand-lg bg-success" role="navigation-demo">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-translate">
+                    <a class="navbar-brand" href="Dashboard.html">Xsilica</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="Clinics.html" class="nav-link">
+                                Sign out
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#pablo" class="nav-link">
+
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-->
+        </nav>
+        <!-- 	            end nav tabs -->
+
+
+
+
+        <!--Medical Licenses-->
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col align-items-center ">
+                    <P class="lead">
+                        <h4 class="text-center text-dark text-black-50"> New Dental License Application </h4>
+                    </P>
+
+
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col small">
+                    <div class="container">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link " data-toggle="modal" data-target="#description">Description</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " data-toggle="modal" data-target="#prerequisites">Prerequisites</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="modal" data-target="#documents">Required Documents</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="modal" data-target="#fee">Fee</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" data-toggle="modal" data-target="#timeframe">Timeframe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" data-toggle="modal" data-target="#policy">Policies &
+                                    Procedure</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="container">
+                <div class="container">
+                    <div id="navigation-pills">
+
+
+                        <div class="row align-self ">
+                            <div class="col-lg-12 col-md-12">
+                                <ul class="nav nav-pills nav-pills-icons" role="tablist">
+
+                                    <li class="nav-item active">
+                                        <a class="nav-link active" href="#patientDetails" role="tab" data-toggle="tab">
+                                            <i class="material-icons"> face</i> Profile
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="#education" role="tab" data-toggle="tab">
+                                            <i class="fas fa-graduation-cap"></i> Education
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#diagnosis" role="tab" data-toggle="tab">
+                                            <i class="fab fa-black-tie"></i> Experience
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#membership" role="tab" data-toggle="tab">
+                                            <i class="fas fa-hotel"></i>Memberships
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#declarations" role="tab" data-toggle="tab">
+                                            <i class="fas fa-retweet"></i> Declarations
+                                        </a>
+                                    </li>
+
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#view" role="tab" data-toggle="tab">
+                                            <i class="fas fa-paper-plane"></i> View & Submit
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#feepanel" role="tab" data-toggle="tab">
+                                            <i class="fas fa-coins"></i> Fee Payments
+                                        </a>
+                                    </li>
+
+                                </ul>
+                                <hr class="mb-0">
+                                <div class="tab-content mt-0">
+                                    <div class="tab-pane active" id="patientDetails">
+                                        <!--Application details in cards-->
+                                        <div class="row mt-0">
+                                            <div class="card mr-3" style="width: 20rem;">
+                                                <img class="card-img-top profile-photo-small rounded-circle" style="width:200px; align-self: center"
+                                                    src="..//material-kit/assets/img/faces/christian.jpg" alt="Card image cap">
+
+                                                <p class="font-weight-bold ml-1 mb-0 text-center">Dr. Raj Kumar</p>
+                                                <p class="font-weight-bold ml-1 mb-0 text-center">Surgeon | Orthopedic</p>
+                                                <p class="text-sm-center ml-1 mb-0 text-center">25-Dec-1970 | Male </p>
+                                                <p class="text-sm-center ml-1 mb-0 text-center">s/o Mr. Ram Prasad </p>
+                                                <p class="text-sm-center ml-1 mb-0 text-center">raj@aol.com </p>
+                                                <p class="text-sm-center ml-1 mb-0 text-center">78598585 </p>
+                                                <div class="card-body text-center">
+                                                    <a href="#0" class="card-link text-center">Edit</a>
+                                                    <a href="#0" class="card-link text-center">Add</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="card mr-3 ml-2" style="width: 20rem;">
+
+
+                                                <span class="d-block p-2 bg-primary text-white">Specialization &
+                                                    category
+                                                </span>
+                                                <div class="container">
+                                                    <div class=" ml-1">
+                                                        <div class="form-group">
+                                                            <label for="formGroupExampleInput" class="bmd-label-floating">Category
+                                                            </label>
+                                                            <input type="text" class="form-control" id="formGroupExampleInput">
+
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="formGroupExampleInput" class="bmd-label-floating">Speciality
+                                                            </label>
+                                                            <input type="text" class="form-control" id="formGroupExampleInput">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-check form-check-radio">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name="exampleRadios"
+                                                                id="exampleRadios1" value="option1">
+                                                            Full Time
+                                                            <span class="circle">
+                                                                <span class="check"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-radio">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name="exampleRadios"
+                                                                id="exampleRadios1" value="option1">
+                                                            Part Time
+                                                            <span class="circle">
+                                                                <span class="check"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-radio">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name="exampleRadios"
+                                                                id="exampleRadios1" value="option1">
+                                                            Consultant
+                                                            <span class="circle">
+                                                                <span class="check"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-radio">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name="exampleRadios"
+                                                                id="exampleRadios1" value="option1">
+                                                            Visiting Doctor
+                                                            <span class="circle">
+                                                                <span class="check"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+
+
+                                                </div>
+                                                <a href="#0" class=" text-center ml-1 card-link   ">Save</a>
+                                            </div>
+                                            <div class="card mr-3 ml-2" style="width: 20rem;">
+
+
+                                                <span class="d-block p-2 bg-primary text-white">Identification
+
+                                                </span>
+                                                <div class="container">
+
+                                                    <div class=" ml-1">
+                                                        <div class="form-group">
+                                                            <label for="formGroupExampleInput" class="bmd-label-floating">Passport
+                                                                No
+                                                            </label>
+                                                            <input type="text" class="form-control" id="formGroupExampleInput">
+
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="formGroupExampleInput" class="bmd-label-floating">Country
+                                                                of Issuance
+                                                            </label>
+                                                            <input type="text" class="form-control" id="formGroupExampleInput">
+
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="formGroupExampleInput" class="bmd-label-floating">Expiry
+                                                                Date
+                                                            </label>
+                                                            <input type="text" class="form-control" id="formGroupExampleInput">
+
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="formGroupExampleInput" class="bmd-label-floating">National
+                                                                ID Name
+                                                            </label>
+                                                            <input type="text" class="form-control" id="formGroupExampleInput">
+
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="formGroupExampleInput" class="bmd-label-floating">National
+                                                                ID Number
+                                                            </label>
+                                                            <input type="text" class="form-control" id="formGroupExampleInput">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <a href="#0" class=" text-center ml-1 card-link   ">Save</a>
+                                            </div>
+
+
+
+                                        </div>
+
+                                    </div>
+
+                                    <!--Education-->
+                                    <div class="tab-pane" id="education">
+                                        <div class="row">
+                                            <div class="card mr-3" style="width: 15rem;">
+
+
+                                                <span class="d-block p-2 bg-primary text-white">Post Graduation</span>
+                                                <p class="font-weight-bold ml-1">Anaesthesiology - MD</p>
+                                                <p class="text-sm-left ml-1">St. Georges Medical College</p>
+                                                <p class="text-sm-left ml-1">London</p>
+                                                <p class="text-sm-left ml-1">United Kingdom</p>
+                                                <p class="text-sm-left ml-1">Year of passing | 2005</p>
+                                                <div class="card-body">
+                                                    <a href="#0" class="card-link">Edit</a>
+                                                    <a href="#0" class="card-link">Remove</a>
+                                                </div>
+                                            </div>
+                                            <div class="card mr-3" style="width: 15rem;">
+
+
+                                                <span class="d-block p-2 bg-primary text-white">Post Graduation</span>
+                                                <p class="font-weight-bold ml-1">General Surgery - MS</p>
+                                                <p class="text-sm-left ml-1">St. Georges Medical College</p>
+                                                <p class="text-sm-left ml-1">London</p>
+                                                <p class="text-sm-left ml-1">United Kingdom</p>
+                                                <p class="text-sm-left ml-1">Year of passing | 2002</p>
+                                                <div class="card-body">
+                                                    <a href="#0" class="card-link">Edit</a>
+                                                    <a href="#0" class="card-link">Remove</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="card mr-3" style="width: 15rem;">
+
+
+                                                <span class="d-block p-2 bg-primary text-white"> Graduation</span>
+                                                <p class="font-weight-bold ml-1"> MBBS</p>
+                                                <p class="text-sm-left ml-1">St. Georges Medical College</p>
+                                                <p class="text-sm-left ml-1">London</p>
+                                                <p class="text-sm-left ml-1">United Kingdom</p>
+                                                <p class="text-sm-left ml-1">Year of passing | 1999</p>
+                                                <div class="card-body">
+                                                    <a href="#0" class="card-link">Edit</a>
+                                                    <a href="#0" class="card-link">Remove</a>
+                                                </div>
+
+
+                                            </div>
+
+
+                                        </div>
+
+
+                                        <button class="btn btn-success btn-sm pull-right" type="button" data-toggle="modal"
+                                            data-target="#addEducation">Add Eduction</button>
+                                    </div>
+
+
+                                    <!--View Application-->
+                                    <div class="tab-pane" id="view">
+                                        <div class="row">
+                                            <div class="card mr-3 col-md-12">
+
+
+                                                <span class="d-block p-2 bg-primary text-white text-center text-capitalize">New
+                                                    Medical Applcation Form </span>
+                                                <!-- Header Section -->
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-md-8 text-center">
+
+                                                            <div class=" text-center mr-0">
+                                                                <p class=" card-title mb-0">
+                                                                    Dr. Raj Kumar
+                                                                </p>
+                                                                <p class="mt-0">
+                                                                    Surgeon | Orthopedic
+                                                                </p>
+                                                                <p class="mt-0">
+                                                                    <i class="fas fa-map-marked-alt"></i> 201 Classic
+                                                                    Apartments, Bur Dubai, Dubai | UAE
+                                                                </p>
+
+                                                                <p class="mt-0">
+                                                                    <i class="fas fa-mobile-alt"></i> 550124512
+                                                                    <i class="fas fa-at"></i> rajkumar@aol.com
+                                                                </p>
+
+
+                                                            </div>
+
+
+                                                        </div>
+                                                        <div class="col-md-4 align-content-center">
+                                                            <img class="card-img-top profile-photo-small rounded-circle"
+                                                                style="width:120px; align-self: center" src="..//material-kit/assets/img/faces/christian.jpg"
+                                                                alt="Card image cap">
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                                <hr class="mt-0 mb-1">
+
+                                                <!--Education within view-->
+
+                                                <h4 class="mb-0 mt-1">
+                                                    Education Details
+                                                </h4>
+
+                                                <div class="container mt-0">
+                                                    <div class="row mt-0">
+                                                        <div class="card mr-3" style="width: 15rem;">
+
+
+                                                            <span class="d-block p-2 bg-secondary text-white">Post
+                                                                Graduation</span>
+                                                            <p class="font-weight-bold ml-1">Anaesthesiology - MD</p>
+                                                            <p class="text-sm-left ml-1">St. Georges Medical College</p>
+                                                            <p class="text-sm-left ml-1">London</p>
+                                                            <p class="text-sm-left ml-1">United Kingdom</p>
+                                                            <p class="text-sm-left ml-1">Year of passing | 2005</p>
+
+                                                        </div>
+                                                        <div class="card mr-3" style="width: 15rem;">
+
+
+                                                            <span class="d-block p-2 bg-secondary text-white">Post
+                                                                Graduation</span>
+                                                            <p class="font-weight-bold ml-1">General Surgery - MS</p>
+                                                            <p class="text-sm-left ml-1">St. Georges Medical College</p>
+                                                            <p class="text-sm-left ml-1">London</p>
+                                                            <p class="text-sm-left ml-1">United Kingdom</p>
+                                                            <p class="text-sm-left ml-1">Year of passing | 2002</p>
+
+                                                        </div>
+
+                                                        <div class="card mr-3" style="width: 15rem;">
+
+
+                                                            <span class="d-block p-2 bg-secondary text-white"> Graduation</span>
+                                                            <p class="font-weight-bold ml-1"> MBBS</p>
+                                                            <p class="text-sm-left ml-1">St. Georges Medical College</p>
+                                                            <p class="text-sm-left ml-1">London</p>
+                                                            <p class="text-sm-left ml-1">United Kingdom</p>
+                                                            <p class="text-sm-left ml-1">Year of passing | 1999</p>
+
+
+
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+
+                                                <!--Experience within view-->
+
+                                                <h4 class="mb-0 mt-1">
+                                                    Experiance Details
+                                                </h4>
+                                                <div class="row ml-1">
+                                                    <div class="card mr-3" style="width: 15rem;">
+                                                        <span class="d-block p-2 bg-secondary text-white"> AIIMS Hospital</span>
+                                                        <p class="font-weight-bold ml-1"> Surgeon</p>
+                                                        <p class="text-sm-left ml-1">13-Jan-2000 till 20-Feb-2000</p>
+                                                        <p class="text-sm-left ml-1">New Delhi | New Delhi </p>
+                                                        <p class="text-sm-left ml-1">India </p>
+
+
+
+                                                    </div>
+                                                </div>
+
+                                                <!--Membership within View-->
+                                                <h4 class="mb-0 mt-1">
+                                                    Membership Details
+                                                </h4>
+                                                <div class="row ml-1">
+                                                    <div class="card mr-3" style="width: 15rem;">
+                                                        <span class="d-block p-2 bg-secondary text-white"> Manchester
+                                                            Medical
+                                                            Board</span>
+                                                        <p class="font-weight-bold ml-1"> London | United Kingdom</p>
+                                                        <p class="text-sm-left ml-1">Board No : 52657485</p>
+                                                        <p class="text-sm-left ml-1">Membership Date | 12/Oct/2015 </p>
+                                                        <p class="text-sm-left ml-1">www.manmedboard.com </p>
+                                                      
+
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-check text-center">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="checkbox" value="">
+                                                          I agree to the Terms and Conditions and the application details are true to my knowledge
+                                                            <span class="form-check-sign">
+                                                                <span class="check"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                        
+                                       <div class="container text-center">
+                                            <button type="button" class="btn btn-primary">Download</button>
+                                            <button type="button" class="btn btn-success">Proceed to payment</button>
+                                       </div>
+                                       <br>
+                                            </div>
+
+                                         
+                                      
+                                      
+                                      
+                                        </div>
+                                        
+                                     
+
+
+
+                                    </div>
+
+                                    <!--Experiance Tab panel-->
+                                    <div class="tab-pane" id="diagnosis">
+                                        <div>
+
+                                            <div class="row ml-1">
+                                                <div class="card mr-3" style="width: 15rem;">
+                                                    <span class="d-block p-2 bg-primary text-white"> AIIMS Hospital</span>
+                                                    <p class="font-weight-bold ml-1"> Surgeon</p>
+                                                    <p class="text-sm-left ml-1">13-Jan-2000 till 20-Feb-2000</p>
+                                                    <p class="text-sm-left ml-1">New Delhi | New Delhi </p>
+                                                    <p class="text-sm-left ml-1">India </p>
+                                                    <div class="card-body">
+                                                        <a href="#0" class="card-link">Edit</a>
+                                                        <a href="#0" class="card-link">Remove</a>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            <button class="btn btn-success btn-sm pull-right" type="button" data-toggle="modal"
+                                                data-target="#addExp">Add Experience</button>
+                                        </div>
+
+                                    </div>
+
+                                    <!--Membership Tab panel-->
+                                    <div class="tab-pane" id="membership">
+                                        <div>
+
+                                            <div class="row ml-1">
+                                                <div class="card mr-3" style="width: 15rem;">
+                                                    <span class="d-block p-2 bg-primary text-white"> Manchester Medical
+                                                        Board</span>
+                                                    <p class="font-weight-bold ml-1"> London | United Kingdom</p>
+                                                    <p class="text-sm-left ml-1">Board No : 52657485</p>
+                                                    <p class="text-sm-left ml-1">Membership Date | 12/Oct/2015 </p>
+                                                    <p class="text-sm-left ml-1">www.manmedboard.com </p>
+                                                    <div class="card-body">
+                                                        <a href="#0" class="card-link">Edit</a>
+                                                        <a href="#0" class="card-link">Remove</a>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            <button class="btn btn-success btn-sm pull-right" type="button" data-toggle="modal"
+                                                data-target="#addMembership">Add Membership</button>
+                                        </div>
+
+                                    </div>
+
+                                    <!--feepanel-->
+                                    <div class="tab-pane" id="feepanel">
+                                        <div class="container">
+                                            <div class="row">
+
+                                                <div class="card mr-2" style="width: 15rem;">
+                                                    <img class="card-img-top" src="assets/img/application.jpg" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <p class="card-text  card-title">Initial Application Fee</p>
+                                                        <p class="card-text  ">100 AED</p>
+
+                                                    </div>
+                                                </div>
+                                                <div class="card mr-2" style="width: 15rem;">
+                                                    <img class="card-img-top" src="assets/img/processing1.png" alt="Card image cap">
+                                                    <div class="card-body mr-2">
+                                                        <p class="card-text card-title"> Processing Fee</p>
+                                                        <p class="card-text">
+                                                            4700AED
+                                                            With Previous PSV
+                                                        </p>
+                                                        <p class="card-text">
+
+                                                            5700AED
+                                                            Without Previous PSV
+
+                                                        </p>
+                                                        <p class="card-text small">
+
+                                                            Without Previous PSV
+                                                            ​Application Processing Fees does not include additional
+                                                            fees requested by third party verifiers
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="card mr-2" style="width: 15rem;">
+                                                    <img class="card-img-top" src="assets/img/card1.png" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <p class=" card-title">License Card Fee</p>
+                                                        <p class=" card-text">500 AED</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card mr-2" style="width: 15rem;">
+                                                    <img class="card-img-top" src="assets/img/clock.png" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <p class="card-title">Urgent Application Fee</p>
+                                                        <p class="card-text  ">1000 AED</p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+
+                                    <!--Reference-->
+                                    <div class="tab-pane" id="declarations">
+                                        <div class="container">
+                                            <div class="row ml-1 mr-2">
+                                                <div class=" md-6 small">1) Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit. Cras luctus rhoncus justo eget rutrum. Praesent ex
+                                                    arcu, auctor a leo eget, gravida ultricies metus. </div>
+                                                <div class=" mr-2 ml-2">
+                                                    <div class="form-check form-check-radio form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                                id="inlineRadio1" value="option1"> Yes
+                                                            <span class="circle">
+                                                                <span class="check"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-radio form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                                id="inlineRadio2" value="option2"> No
+                                                            <span class="circle">
+                                                                <span class="check"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class=" ">
+
+                                                </div>
+                                                <div class="file btn btn-sm btn-primary small">
+                                                    Upload
+                                                    <input type="file" name="file" />
+                                                </div>
+                                            </div>
+                                            <div class="row ml-1 mr-2">
+                                                <div class=" md-6 small">1) Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit. Cras luctus rhoncus justo eget rutrum. Praesent ex
+                                                    arcu, auctor a leo eget, gravida ultricies metus. </div>
+                                                <div class=" mr-2 ml-2">
+                                                    <div class="form-check form-check-radio form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                                id="inlineRadio1" value="option1"> Yes
+                                                            <span class="circle">
+                                                                <span class="check"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-radio form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                                id="inlineRadio2" value="option2"> No
+                                                            <span class="circle">
+                                                                <span class="check"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class=" ">
+
+                                                </div>
+                                                <div class="file btn btn-sm btn-primary small">
+                                                    Upload
+                                                    <input type="file" name="file" />
+                                                </div>
+                                            </div>
+                                            <div class="row ml-1 mr-2">
+                                                <div class=" md-6 small">1) Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit. Cras luctus rhoncus justo eget rutrum. Praesent ex
+                                                    arcu, auctor a leo eget, gravida ultricies metus. </div>
+                                                <div class=" mr-2 ml-2">
+                                                    <div class="form-check form-check-radio form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                                id="inlineRadio1" value="option1"> Yes
+                                                            <span class="circle">
+                                                                <span class="check"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-radio form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                                id="inlineRadio2" value="option2"> No
+                                                            <span class="circle">
+                                                                <span class="check"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class=" ">
+
+                                                </div>
+                                                <div class="file btn btn-sm btn-primary small">
+                                                    Upload
+                                                    <input type="file" class=" xdiv xinput" name="file" />
+                                                </div>
+                                            </div>
+                                            <div class="row ml-1 mr-2">
+                                                <div class=" md-6 small">1) Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit. Cras luctus rhoncus justo eget rutrum. Praesent ex
+                                                    arcu, auctor a leo eget, gravida ultricies metus. </div>
+                                                <div class=" mr-2 ml-2">
+                                                    <div class="form-check form-check-radio form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                                id="inlineRadio1" value="option1"> Yes
+                                                            <span class="circle">
+                                                                <span class="check"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-radio form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                                id="inlineRadio2" value="option2"> No
+                                                            <span class="circle">
+                                                                <span class="check"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class=" ">
+
+                                                </div>
+                                                <div class="file btn btn-sm btn-primary small">
+                                                    Upload
+                                                    <input type="file" name="file" />
+                                                </div>
+                                            </div>
+                                            <div class="row ml-1 mr-2">
+                                                <div class=" md-6 small">1) Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit. Cras luctus rhoncus justo eget rutrum. Praesent ex
+                                                    arcu, auctor a leo eget, gravida ultricies metus. </div>
+                                                <div class=" mr-2 ml-2">
+                                                    <div class="form-check form-check-radio form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                                id="inlineRadio1" value="option1"> Yes
+                                                            <span class="circle">
+                                                                <span class="check"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-radio form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                                id="inlineRadio2" value="option2"> No
+                                                            <span class="circle">
+                                                                <span class="check"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class=" ">
+
+                                                </div>
+                                                <div class="file btn btn-sm btn-primary small">
+                                                    Upload
+                                                    <input type="file" name="file" />
+                                                </div>
+                                            </div>
+                                            <div class="row ml-1 mr-2">
+                                                <div class=" md-4 small">1) Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit. Cras luctus rhoncus justo eget rutrum. Praesent ex
+                                                    arcu, auctor a leo eget, gravida ultricies metus. </div>
+                                                <div class=" mr-2 ml-2">
+                                                    <div class="form-check form-check-radio form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                                id="inlineRadio1" value="option1"> Yes
+                                                            <span class="circle">
+                                                                <span class="check"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-radio form-check-inline">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                                id="inlineRadio2" value="option2"> No
+                                                            <span class="circle">
+                                                                <span class="check"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class=" ">
+
+                                                </div>
+                                                <div class="file btn btn-sm btn-primary small text-right">
+                                                    Upload
+                                                    <input type="file" name="file" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="container">
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+        <div class="section section-download" id="downloadSection">
+
+        </div>
+    </div>
+
+    <footer class="footer" data-background-color="black">
+        <div class="container">
+            <nav class="float-left">
+                <ul>
+                    <li>
+                        <a href="">
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/license">
+
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright float-right">
+                &copy; Copy Rights
+
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!--Model Classes-->
+
+    <!--Experience Modal-->
+    <div class="modal fade" id="addExp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info">
+                    <h5 class="modal-title " id="exampleModalLabel">Experiance</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="container">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput" class="bmd-label-floating">Name of the
+                                    Organization/Hospital </label>
+                                <input type="text" class="form-control" id="formGroupExampleInput">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput" class="bmd-label-floating">Designation/Post </label>
+                                <input type="text" class="form-control" id="formGroupExampleInput">
+
+                            </div>
+                            <div class="row ml-1">
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput" class="bmd-label-floating">Address </label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput">
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput" class="bmd-label-floating">City</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput">
+
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label for="formGroupExampleInput" class="bmd-label-floating">State/Province
+                                        </label>
+                                        <input type="text" class="form-control" id="formGroupExampleInput">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="formGroupExampleInput" class="bmd-label-floating">Country </label>
+                                        <input type="text" class="form-control" id="formGroupExampleInput">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="row ml-1">
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput" class="bmd-label-floating">Job Start Date
+                                    </label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput">
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput" class="bmd-label-floating">Job End Date </label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-sm btn-success">Save </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <!--CME Credits Modal-->
+    <div class="modal fade" id="addMembership" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info">
+                    <h5 class="modal-title " id="exampleModalLabel">New Membership</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="formGroupExampleInput" class="bmd-label-floating">Medical Board Name</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput">
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formGroupExampleInput" class="bmd-label-floating">Board Number/ID </label>
+                        <input type="text" class="form-control" id="formGroupExampleInput">
+
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="formGroupExampleInput" class="bmd-label-floating ml-1">City</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput" class="bmd-label-floating ml-1">Country </label>
+                            <input type="text" class="form-control" id="formGroupExampleInput">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput" class="bmd-label-floating">Website</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput" class="">Membership Date </label>
+                        <input type="date" class="form-control" id="formGroupExampleInput">
+
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-sm btn-success">Save </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--References Modal-->
+    <div class="modal fade" id="addReferences" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info">
+                    <h5 class="modal-title " id="exampleModalLabel">New References</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="formGroupExampleInput" class="bmd-label-floating"> Name</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput">
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formGroupExampleInput" class="bmd-label-floating">Designation </label>
+                        <input type="text" class="form-control" id="formGroupExampleInput">
+
+                    </div>
+                    <div class="row ml-1">
+
+                        <div class="form-group">
+                            <label for="formGroupExampleInput" class="bmd-label-floating">Mobile </label>
+                            <input type="text" class="form-control" id="formGroupExampleInput">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput" class="bmd-label-floating">Email </label>
+                            <input type="text" class="form-control" id="formGroupExampleInput">
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-sm btn-success">Save </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  End Modal -->
+    <!--Description Modal-->
+    <div class="modal fade" id="description" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Description</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        This service enables the individuals to apply for a new Medical healthcare professional
+                        license.</span>
+
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Prerequisites Modal-->
+    <div class="modal fade" id="prerequisites" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Prerequisites</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Meeting the minimum requirements.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Documents-->
+    <div class="modal fade" id="documents" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Documents Required</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <ul>
+                            <li class="plain"> Education certificates with transcript of records. Education
+                                Certificates may include any of the followings: Diploma, Bachelor’s, Post Graduates
+                                Degree etc.
+                            </li>
+                            <li> Recent experience letters.</li>
+                            <li> Valid License/​Registration from licensing body of country of recent employment.</li>
+                            <li> Valid Good Standing Certificate.</li>
+                            <li> Valid Passport Copy.</li>
+                            <li> Recent Photo.</li>
+                            <li> Experience Certificate</li>
+                            <li> Offer letter from recruiting facility (If Available).</li>
+                            <li> Malpractice Insurance from recruiting facility (If Available).</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fee Modal-->
+    <div class="modal fade" id="fee" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Fee</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Meeting the minimum requirements.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Time Frame Modal-->
+    <div class="modal fade" id="timeframe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Time Frame</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Minimum of 21 Working days. For Urgent requests its reviewed 3 working Days.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Model Classes-->
+    <!--Description Modal-->
+    <div class="modal fade" id="description" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Description</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        This service enables the individuals to apply for a new Medical healthcare professional
+                        license.</span>
+
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Prerequisites Modal-->
+    <div class="modal fade" id="prerequisites" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Prerequisites</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Meeting the minimum requirements.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Documents-->
+    <div class="modal fade" id="documents" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Documents Required</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <ul>
+                            <li class="plain"> Education certificates with transcript of records. Education
+                                Certificates may include any of the followings: Diploma, Bachelor’s, Post Graduates
+                                Degree etc.
+                            </li>
+                            <li> Recent experience letters.</li>
+                            <li> Valid License/​Registration from licensing body of country of recent employment.</li>
+                            <li> Valid Good Standing Certificate.</li>
+                            <li> Valid Passport Copy.</li>
+                            <li> Recent Photo.</li>
+                            <li> Experience Certificate</li>
+                            <li> Offer letter from recruiting facility (If Available).</li>
+                            <li> Malpractice Insurance from recruiting facility (If Available).</li>
+                        </ul>
+
+
+
+
+
+
+
+
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fee Modal-->
+    <div class="modal fade" id="fee" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Fee</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Meeting the minimum requirements.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Time Frame Modal-->
+    <div class="modal fade" id="timeframe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Time Frame</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Minimum of 21 Working days. For Urgent requests its reviewed 3 working Days.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Policy Modal-->
+    <div class="modal fade" id="policy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Policies & Procedure</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        License requirements for physicians and dentists
+
+                        Select category.
+                        Fill the form.
+                        Payment.
+                        PLD team review.
+                        Issue license.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Education Modal-->
+    <div class="modal fade" id="addEducation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info">
+                    <h5 class="modal-title " id="exampleModalLabel">New Education</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Education level</label>
+                        <select class="form-control selectpicker" data-style="btn btn-link" id="exampleFormControlSelect1">
+                            <option>Post Graduation</option>
+                            <option>Graduation</option>
+                            <option>College</option>
+                            <option>Diploma/Certificate</option>
+                            <option>Schooling</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput" class="bmd-label-floating">Name of Institute</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput" class="bmd-label-floating">Name Degree/Course/Specialization</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput">
+
+                    </div>
+                    <div class="row ml-1">
+                        <div class="form-group">
+                            <label for="formGroupExampleInput" class="bmd-label-floating">Address </label>
+                            <input type="text" class="form-control" id="formGroupExampleInput">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput" class="bmd-label-floating">City </label>
+                            <input type="text" class="form-control" id="formGroupExampleInput">
+
+                        </div>
+
+                    </div>
+                    <div class="row ml-1">
+
+                        <div class="form-group">
+                            <label for="formGroupExampleInput" class="bmd-label-floating">Province/State </label>
+                            <input type="text" class="form-control" id="formGroupExampleInput">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput" class="bmd-label-floating">Country </label>
+                            <input type="text" class="form-control" id="formGroupExampleInput">
+
+                        </div>
+                    </div>
+
+                    <div class="row ml-1">
+                        <div class="form-group">
+                            <label for="formGroupExampleInput" class="bmd-label-floating">Year of Passing </label>
+                            <input type="text" class="form-control" id="formGroupExampleInput">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput" class="bmd-label-floating">Upload Degree </label>
+                            <input type="text" class="form-control" id="formGroupExampleInput">
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-sm btn-success">Save </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Policy Modal-->
+    <div class="modal fade" id="policy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Policies & Procedure</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        License requirements for physicians and dentists
+
+                        Select category.
+                        Fill the form.
+                        Payment.
+                        PLD team review.
+                        Issue license.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--   Core JS Files   -->
+    <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+    <script src="./assets/js/plugins/moment.min.js"></script>
+    <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+    <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+    <!--	Plugin for Sharrre btn -->
+    <script src="./assets/js/plugins/jquery.sharrre.js" type="text/javascript"></script>
+    <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+    <script src="./assets/js/material-kit.js?v=2.0.4" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            //init DateTimePickers
+            materialKit.initFormExtendedDatetimepickers();
+
+            // Sliders Init
+            materialKit.initSliders();
+        });
+
+
+        function scrollToDownload() {
+            if ($('.section-download').length != 0) {
+                $("html, body").animate({
+                    scrollTop: $('.section-download').offset().top
+                }, 1000);
+            }
+        }
+
+
+        $(document).ready(function () {
+
+            $('#facebook').sharrre({
+                share: {
+                    facebook: true
+                },
+                enableHover: false,
+                enableTracking: false,
+                enableCounter: false,
+                click: function (api, options) {
+                    api.simulateClick();
+                    api.openPopup('facebook');
+                },
+                template: '<i class="fab fa-facebook-f"></i> Facebook',
+                url: ''
+            });
+
+            $('#googlePlus').sharrre({
+                share: {
+                    googlePlus: true
+                },
+                enableCounter: false,
+                enableHover: false,
+                enableTracking: true,
+                click: function (api, options) {
+                    api.simulateClick();
+                    api.openPopup('googlePlus');
+                },
+                template: '<i class="fab fa-google-plus"></i> Google',
+                url: ''
+            });
+
+            $('#twitter').sharrre({
+                share: {
+                    twitter: true
+                },
+                enableHover: false,
+                enableTracking: false,
+                enableCounter: false,
+                buttons: {
+                    twitter: {
+                        via: 'CreativeTim'
+                    }
+                },
+                click: function (api, options) {
+                    api.simulateClick();
+                    api.openPopup('twitter');
+                },
+                template: '<i class="fab fa-twitter"></i> Twitter',
+                url: ''
+            });
+
+        });
+    </script>
+</body>
+
+</html>
