@@ -148,7 +148,7 @@
                             <thead class="">
                                 <tr>
                                     <th scope="col">Courier Name</th>
-                                    <th scope="col">Contact Name</th>
+                                    <th scope="col">Assign Package Name</th>
                                     <th scope="col">Address</th>
                                     <th scope="col">Phone</th>
                                     <th scope="col">Email</th>
@@ -194,7 +194,7 @@
                                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                                 <a class="dropdown-item" href="#">Edit</a>
                                                 <a class="dropdown-item" href="#">Package Status</a>
-                                                <a class="dropdown-item" href="#">Contact</a>
+                                                <a class="dropdown-item" href="#">Assign Package</a>
                                             </div>
                                         </div>
                                     </td>
@@ -236,7 +236,7 @@
                                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                                 <a class="dropdown-item" href="#">Edit</a>
                                                 <a class="dropdown-item" href="#">Package Status</a>
-                                                <a class="dropdown-item" href="#">Contact</a>
+                                                <a class="dropdown-item" href="#">Assign Package</a>
                                             </div>
                                         </div>
                                     </td>
@@ -278,7 +278,7 @@
                                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                                 <a class="dropdown-item" href="#">Edit</a>
                                                 <a class="dropdown-item" href="#">Package Status</a>
-                                                <a class="dropdown-item" href="#">Contact</a>
+                                                <a class="dropdown-item" href="#">Assign Package</a>
                                             </div>
                                         </div>
                                     </td>
@@ -320,7 +320,7 @@
                                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                                 <a class="dropdown-item" href="#">Edit</a>
                                                 <a class="dropdown-item" href="#">Package Status</a>
-                                                <a class="dropdown-item" href="#">Contact</a>
+                                                <a class="dropdown-item" href="#">Assign Package</a>
                                             </div>
                                         </div>
                                     </td>
@@ -362,7 +362,7 @@
                                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                                 <a class="dropdown-item" href="#">Edit</a>
                                                 <a class="dropdown-item" href="#">Package Status</a>
-                                                <a class="dropdown-item" href="#">Contact</a>
+                                                <a class="dropdown-item" href="#">Assign Package</a>
                                             </div>
                                         </div>
                                     </td>
@@ -404,7 +404,7 @@
                                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                                 <a class="dropdown-item" href="#">Edit</a>
                                                 <a class="dropdown-item" href="#">Package Status</a>
-                                                <a class="dropdown-item" href="#">Contact</a>
+                                                <a class="dropdown-item" href="#">Assign Package</a>
                                             </div>
                                         </div>
                                     </td>
@@ -447,11 +447,64 @@
               
             </div>
             <div class="text-right">
-                <p>Add New Courier</p>
-                                    </div><br>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                  Add Courier
+                  </button>
+                  
         </div>
     </div>
     </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">New Courier</h5>
+
+<div class="col">
+    <div class="form-group bmd-form-group">
+        <label class="bmd-label-floating">Courier Name</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group bmd-form-group">
+        <label class="bmd-label-floating">Fist Name</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group bmd-form-group">
+        <label class="bmd-label-floating">Last Name</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group bmd-form-group">
+        <label class="bmd-label-floating">Address</label>
+        <input type="textarea" class="form-control">
+      </div>
+      <div class="form-group bmd-form-group">
+        <label class="bmd-label-floating">Mobile</label>
+        <input type="number" class="form-control">
+      </div>
+      <div class="form-group bmd-form-group">
+        <label class="bmd-label-floating">Email</label>
+        <input type="email" class="form-control">
+      </div>
+</div>
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <footer class="footer footer-default">
         <div class="container">
             <nav class="float-left">
