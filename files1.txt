@@ -1,0 +1,20 @@
+Advt.html
+Appointments.html
+Clinics - Copy.html
+Clinics.html
+Dashboard.html
+DentalLicense.html
+fullcalendar.html
+Home.html
+Index.html
+indexOld.html
+licenses.html
+MedicalLicense.html
+NursingLicense.html
+Patients.html
+RegisterOLD.html
+Registration.html
+Signin.html
+Status.html
+Tasks.html
+template.html
