@@ -6174,7 +6174,7 @@ button.close {
 }
 
 .bg-primary {
-  background-color: #2196f3 !important;
+  background-color: #078d3a !important;
 }
 
 a.bg-primary:hover,
@@ -14509,7 +14509,7 @@ textarea {
 
 .nav-pills .nav-item .nav-link.active {
   color: #fff;
-  background-color: #9c27b0;
+  background-color: #27b02b;
   box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(156, 39, 176, 0.6);
 }
 
@@ -14639,7 +14639,7 @@ h6,
 .h2,
 .h3,
 .h4 {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Lato", "Helvetica", "Roboto", sans-serif;
   font-weight: 300;
   line-height: 1.5em;
 }
@@ -14730,7 +14730,7 @@ small,
 .footer-big h4,
 .media .media-heading {
   font-weight: 700;
-  font-family: "Roboto Slab", "Times New Roman", serif;
+  font-family: "Lato", "Roboto Slab", serif;
 }
 
 .title,
